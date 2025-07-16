@@ -1,0 +1,28 @@
+{
+  "version": "1.0.0",
+  "rss": "https://newhorizons.games/feed/",
+  "discord": {
+    "clientId": "1394928830665457736",
+    "smallImageText": "New Horizons",
+    "smallImageKey": "newhorizons"
+  },
+  "servers": [
+    {
+      "id": "NewHorizons-1.21.1",
+      "name": "New Horizons (Minecraft 1.21.1)",
+      "description": "New Horizons server running Minecraft 1.21.1 + Mods",
+      "icon": "https://newhorizons.games/launcher/icon.png",
+      "version": "1.0.0",
+      "address": "play.newhorizons.games",
+      "minecraftVersion": "1.21.1",
+      "discord": {
+        "shortId": "NewHorizons",
+        "largeImageKey": "newhorizons",
+        "largeImageText": "New Horizons"
+      },
+      "mainServer": true,
+      "autoconnect": false,
+      "modules": []
+    }
+  ]
+}
