@@ -1,9 +1,10 @@
 const fs = require('fs');
+const path = require('path');
 const https = require('https');
 
 const TEMPLATE_PATH = 'distribution.template.json';
 const OUTPUT_PATH = 'distribution.json';
-const MODS_URL = 'https://newhorizons.games/launcher/mods/';
+const MODS_URL = 'https://newhorizons.games/launcher/mods/'; // Adjust if your mod listing URL is different
 
 function fetchHTML(url) {
     return new Promise((resolve, reject) => {
@@ -15,28 +16,26 @@ function fetchHTML(url) {
     });
 }
 
+// Extract .jar links from a simple Apache/nginx directory listing HTML
 function parseModLinks(html) {
-    // Matches <a href="filename.jar">
     const regex = /href="([^"]+\.jar)"/g;
     const links = [];
     let match;
     while ((match = regex.exec(html)) !== null) {
-        // Ignore subfolders and parent links
-        const filename = match[1];
-        if (!filename.includes('/')) {
-            links.push(decodeURIComponent(filename));
+        if (!match[1].includes('/')) {
+            links.push(match[1]);
         }
     }
     return links;
 }
 
 function getModType(filename) {
-    filename = filename.toLowerCase();
-    if (filename.includes('fabric')) return 'FabricMod';
-    if (filename.includes('neoforge')) return 'NeoForgeMod';
-    if (filename.includes('forge')) return 'ForgeMod';
-    if (filename.includes('quilt')) return 'QuiltMod';
-    return 'UnknownMod';
+    const lower = filename.toLowerCase();
+    if (lower.includes('neoforge')) return 'NeoForgeMod';
+    if (lower.includes('fabric')) return 'FabricMod';
+    // Failsafe: default to NeoForgeMod but warn user
+    console.warn(`WARNING: Could not detect mod type for ${filename}, defaulting to NeoForgeMod.`);
+    return 'NeoForgeMod';
 }
 
 async function buildDistribution() {
@@ -48,8 +47,8 @@ async function buildDistribution() {
     const modFiles = parseModLinks(html);
 
     const modules = modFiles.map(filename => ({
-        id: filename, // RAW filename
-        name: filename, // RAW filename
+        id: filename,
+        name: filename,
         type: getModType(filename),
         artifact: {
             url: `${MODS_URL}${encodeURIComponent(filename)}`

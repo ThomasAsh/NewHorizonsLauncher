@@ -6,10 +6,10 @@ exports.REMOTE_DISTRO_URL = 'https://newhorizons.games/launcher/distribution.jso
 
 const api = new DistributionAPI(
     ConfigManager.getLauncherDirectory(),
-    null, // Injected forcefully by the preloader.
-    null, // Injected forcefully by the preloader.
-    exports.REMOTE_DISTRO_URL,
-    false
-)
+        null, // Injected forcefully by the preloader.
+            null, // Injected forcefully by the preloader.
+                exports.REMOTE_DISTRO_URL,
+                    false
+                    )
 
-exports.DistroAPI = api
+                    exports.DistroAPI = api
