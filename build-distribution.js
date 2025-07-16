@@ -1,10 +1,9 @@
 const fs = require('fs');
-const path = require('path');
 const https = require('https');
 
 const TEMPLATE_PATH = 'distribution.template.json';
 const OUTPUT_PATH = 'distribution.json';
-const MODS_URL = 'https://newhorizons.games/launcher/mods/'; // Adjust if your mod listing URL is different
+const MODS_URL = 'https://newhorizons.games/launcher/mods/';
 
 function fetchHTML(url) {
     return new Promise((resolve, reject) => {
@@ -16,7 +15,6 @@ function fetchHTML(url) {
     });
 }
 
-// Extract .jar links from a simple Apache/nginx directory listing HTML
 function parseModLinks(html) {
     const regex = /href="([^"]+\.jar)"/g;
     const links = [];
@@ -30,20 +28,21 @@ function parseModLinks(html) {
 }
 
 function getModType(filename) {
-    const lower = filename.toLowerCase();
-    if (lower.includes('neoforge')) return 'NeoForgeMod';
-    if (lower.includes('fabric')) return 'FabricMod';
-    // Failsafe: default to NeoForgeMod but warn user
-    console.warn(`WARNING: Could not detect mod type for ${filename}, defaulting to NeoForgeMod.`);
-    return 'NeoForgeMod';
+    const name = filename.toLowerCase();
+    if (name.includes('neoforge')) return 'NeoForgeMod';
+    if (name.includes('fabric')) return 'FabricMod';
+    return 'NeoForgeMod'; // Default to NeoForge if none matched explicitly
+}
+
+// Custom encoding function that encodes ONLY spaces
+function encodeSpaces(filename) {
+    return filename.replace(/ /g, '%20');
 }
 
 async function buildDistribution() {
     const template = JSON.parse(fs.readFileSync(TEMPLATE_PATH, 'utf8'));
-
     console.log('Fetching mod listing...');
     const html = await fetchHTML(MODS_URL);
-
     const modFiles = parseModLinks(html);
 
     const modules = modFiles.map(filename => ({
@@ -51,12 +50,11 @@ async function buildDistribution() {
         name: filename,
         type: getModType(filename),
         artifact: {
-            url: `${MODS_URL}${encodeURIComponent(filename)}`
+            url: `${MODS_URL}${encodeSpaces(filename)}`
         }
     }));
 
     template.servers[0].modules = modules;
-
     fs.writeFileSync(OUTPUT_PATH, JSON.stringify(template, null, 2));
     console.log(`Done! Wrote ${OUTPUT_PATH} with ${modules.length} mods.`);
 }
