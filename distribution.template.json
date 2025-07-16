@@ -22,7 +22,19 @@
       },
       "mainServer": true,
       "autoconnect": false,
-      "modules": []
+      "modules": [
+        {
+          "id": "net.neoforged:neoforge:47.1.80",
+          "name": "NeoForge",
+          "type": "NeoForge",
+          "artifact": {
+            "url": "https://maven.neoforged.net/releases/net/neoforged/neoforge/21.1.192/neoforge-21.1.192-installer.jar",
+            "size": 7578841,
+            "MD5": "532d8494f2604921c17e0891d1e4811d"
+          },
+          "subModules": []
+        }
+      ]
     }
   ]
 }

@@ -39,24 +39,14 @@ function parseModLinks(html) {
 }
 
 /**
- * Determines the module type by checking for specific keywords in the filename.
- * Critical compatibility JARs are marked as 'Library'.
+ * Determines if a mod is a core library.
  * @param {string} filename The filename of the mod.
- * @returns {string} The type of the module ('NeoForgeMod' or 'Library').
+ * @returns {boolean} True if the mod is a core library, false otherwise.
  */
-function getModType(filename) {
+function isLibrary(filename) {
     const lowerFilename = filename.toLowerCase();
-    
-    // These are critical libraries for compatibility. Assigning them the 'Library' 
-    // type allows the launcher to handle them appropriately (e.g., load order).
     const libraryKeywords = ['connector-', 'fabric-api-', 'forgified-fabric-api-'];
-
-    if (libraryKeywords.some(keyword => lowerFilename.includes(keyword))) {
-        return 'Library';
-    }
-
-    // All other mods are treated as NeoForge mods.
-    return 'NeoForgeMod';
+    return libraryKeywords.some(keyword => lowerFilename.includes(keyword));
 }
 
 /**
@@ -70,36 +60,38 @@ async function buildDistribution() {
         const html = await fetchHTML(MODS_URL);
         const modFiles = parseModLinks(html);
 
+        // THE FIX: Create a single, flat array of module objects.
+        // The launcher UI will use the 'group' property to categorize them visually.
         const modules = modFiles.map(filename => {
-            const type = getModType(filename);
-
-            // THE FIX: The launcher requires a valid Maven ID for ALL module types, including 'Library'.
-            // This logic is now applied to every file without exception.
-            const groupId = 'games.newhorizons.mods';
-            const artifactId = filename
-                .replace(/\.jar$/, '')
-                .replace(/\s+/g, '-')
-                .replace(/[()\[\]{}]/g, '')
-                .replace(/\+/g, 'plus')
-                .replace(/[^a-zA-Z0-9.-]/g, '_');
-            const version = '1.0.0'; // A static version is sufficient and ensures stability.
-            const id = `${groupId}:${artifactId}:${version}`;
+            const isLib = isLibrary(filename);
 
             return {
-                id: id,
+                // Every module, regardless of type, needs a valid Maven ID.
+                id: `games.newhorizons.mods:${filename.replace(/\.jar$/, '').replace(/[^a-zA-Z0-9.-]/g, '_')}:1.0.0`,
                 name: filename,
-                type: type, // This will be either 'NeoForgeMod' or 'Library'
+                type: isLib ? 'Library' : 'NeoForgeMod',
+                // Per your request, all mods are now marked as required.
+                required: {
+                    value: true,
+                    def: true
+                },
+                // The 'group' property is used by the UI to create the visual categories.
+                group: 'Required Mods',
+                // The launcher expects a subModules array, even if empty.
+                subModules: [], 
+                // Every module must have an artifact to resolve its path.
                 artifact: {
                     url: `${MODS_URL}${encodeURIComponent(filename)}`
                 }
             };
         });
 
+        // Assign the flat list of modules directly to the server.
         template.servers[0].modules = modules;
         
         fs.writeFileSync(OUTPUT_PATH, JSON.stringify(template, null, 2));
         
-        console.log(`✅ Done! Wrote ${OUTPUT_PATH} with ${modules.length} mods.`);
+        console.log(`✅ Done! Wrote ${OUTPUT_PATH} with ${modules.length} required mods.`);
 
     } catch (err) {
         console.error('❌ Build failed:', err);
