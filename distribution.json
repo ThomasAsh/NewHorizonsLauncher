@@ -24,16 +24,16 @@
       "autoconnect": false,
       "modules": [
         {
-          "id": "ATi Structures V1.4.2 (1.21+).jar",
-          "name": "ATi Structures V1.4.2 (1.21+).jar",
+          "id": "ATi%20Structures%20V1.4.2%20%281.21%2B%29.jar",
+          "name": "ATi%20Structures%20V1.4.2%20%281.21%2B%29.jar",
           "type": "UnknownMod",
           "artifact": {
-            "url": "https://newhorizons.games/launcher/mods/ATi%20Structures%20V1.4.2%20(1.21%2B).jar"
+            "url": "https://newhorizons.games/launcher/mods/ATi%20Structures%20V1.4.2%20%281.21%2B%29.jar"
           }
         },
         {
-          "id": "Actual Fishing-1.21.1-1.0.1-NeoForge.jar",
-          "name": "Actual Fishing-1.21.1-1.0.1-NeoForge.jar",
+          "id": "Actual%20Fishing-1.21.1-1.0.1-NeoForge.jar",
+          "name": "Actual%20Fishing-1.21.1-1.0.1-NeoForge.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/Actual%20Fishing-1.21.1-1.0.1-NeoForge.jar"
@@ -56,11 +56,11 @@
           }
         },
         {
-          "id": "AdditionalStructures-1.21-(v.6.3.2-NEO).jar",
-          "name": "AdditionalStructures-1.21-(v.6.3.2-NEO).jar",
+          "id": "AdditionalStructures-1.21-%28v.6.3.2-NEO%29.jar",
+          "name": "AdditionalStructures-1.21-%28v.6.3.2-NEO%29.jar",
           "type": "UnknownMod",
           "artifact": {
-            "url": "https://newhorizons.games/launcher/mods/AdditionalStructures-1.21-(v.6.3.2-NEO).jar"
+            "url": "https://newhorizons.games/launcher/mods/AdditionalStructures-1.21-%28v.6.3.2-NEO%29.jar"
           }
         },
         {
@@ -104,8 +104,8 @@
           }
         },
         {
-          "id": "AsyncParticles-3.1.0-beta.4+1.21.1.jar",
-          "name": "AsyncParticles-3.1.0-beta.4+1.21.1.jar",
+          "id": "AsyncParticles-3.1.0-beta.4%2B1.21.1.jar",
+          "name": "AsyncParticles-3.1.0-beta.4%2B1.21.1.jar",
           "type": "UnknownMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/AsyncParticles-3.1.0-beta.4%2B1.21.1.jar"
@@ -152,32 +152,32 @@
           }
         },
         {
-          "id": "BrewinAndChewin-neoforge-4.4.1+1.21.1.jar",
-          "name": "BrewinAndChewin-neoforge-4.4.1+1.21.1.jar",
+          "id": "BrewinAndChewin-neoforge-4.4.1%2B1.21.1.jar",
+          "name": "BrewinAndChewin-neoforge-4.4.1%2B1.21.1.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/BrewinAndChewin-neoforge-4.4.1%2B1.21.1.jar"
           }
         },
         {
-          "id": "CTM-1.21-1.2.1+3.jar",
-          "name": "CTM-1.21-1.2.1+3.jar",
+          "id": "CTM-1.21-1.2.1%2B3.jar",
+          "name": "CTM-1.21-1.2.1%2B3.jar",
           "type": "UnknownMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/CTM-1.21-1.2.1%2B3.jar"
           }
         },
         {
-          "id": "Camphor-1.2.1+1.21.1.jar",
-          "name": "Camphor-1.2.1+1.21.1.jar",
+          "id": "Camphor-1.2.1%2B1.21.1.jar",
+          "name": "Camphor-1.2.1%2B1.21.1.jar",
           "type": "UnknownMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/Camphor-1.2.1%2B1.21.1.jar"
           }
         },
         {
-          "id": "CardsNBoards Neoforge 1.21.1 Domino.jar",
-          "name": "CardsNBoards Neoforge 1.21.1 Domino.jar",
+          "id": "CardsNBoards%20Neoforge%201.21.1%20Domino.jar",
+          "name": "CardsNBoards%20Neoforge%201.21.1%20Domino.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/CardsNBoards%20Neoforge%201.21.1%20Domino.jar"
@@ -232,8 +232,8 @@
           }
         },
         {
-          "id": "ConnectorExtras-1.12.1+1.21.1.jar",
-          "name": "ConnectorExtras-1.12.1+1.21.1.jar",
+          "id": "ConnectorExtras-1.12.1%2B1.21.1.jar",
+          "name": "ConnectorExtras-1.12.1%2B1.21.1.jar",
           "type": "UnknownMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/ConnectorExtras-1.12.1%2B1.21.1.jar"
@@ -248,8 +248,8 @@
           }
         },
         {
-          "id": "CraftPresence-2.6.1+1.21.1-neoforge.jar",
-          "name": "CraftPresence-2.6.1+1.21.1-neoforge.jar",
+          "id": "CraftPresence-2.6.1%2B1.21.1-neoforge.jar",
+          "name": "CraftPresence-2.6.1%2B1.21.1-neoforge.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/CraftPresence-2.6.1%2B1.21.1-neoforge.jar"
@@ -272,40 +272,40 @@
           }
         },
         {
-          "id": "Decorative Pavers 1.21.1 - v1.2 NeoForge.jar",
-          "name": "Decorative Pavers 1.21.1 - v1.2 NeoForge.jar",
+          "id": "Decorative%20Pavers%201.21.1%20-%20v1.2%20NeoForge.jar",
+          "name": "Decorative%20Pavers%201.21.1%20-%20v1.2%20NeoForge.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/Decorative%20Pavers%201.21.1%20-%20v1.2%20NeoForge.jar"
           }
         },
         {
-          "id": "Decorativecovers 1.21.1 - v1.1 - NeoForge.jar",
-          "name": "Decorativecovers 1.21.1 - v1.1 - NeoForge.jar",
+          "id": "Decorativecovers%201.21.1%20-%20v1.1%20-%20NeoForge.jar",
+          "name": "Decorativecovers%201.21.1%20-%20v1.1%20-%20NeoForge.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/Decorativecovers%201.21.1%20-%20v1.1%20-%20NeoForge.jar"
           }
         },
         {
-          "id": "Decorativepaths 1.21.1 - v1.2 - NeoForge.jar",
-          "name": "Decorativepaths 1.21.1 - v1.2 - NeoForge.jar",
+          "id": "Decorativepaths%201.21.1%20-%20v1.2%20-%20NeoForge.jar",
+          "name": "Decorativepaths%201.21.1%20-%20v1.2%20-%20NeoForge.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/Decorativepaths%201.21.1%20-%20v1.2%20-%20NeoForge.jar"
           }
         },
         {
-          "id": "Decorativerailings 1.21.1 - v1.1 - NeoForge.jar",
-          "name": "Decorativerailings 1.21.1 - v1.1 - NeoForge.jar",
+          "id": "Decorativerailings%201.21.1%20-%20v1.1%20-%20NeoForge.jar",
+          "name": "Decorativerailings%201.21.1%20-%20v1.1%20-%20NeoForge.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/Decorativerailings%201.21.1%20-%20v1.1%20-%20NeoForge.jar"
           }
         },
         {
-          "id": "Decorativewoodenlattices 1.21.1 - v1.2 - NeoForge.jar",
-          "name": "Decorativewoodenlattices 1.21.1 - v1.2 - NeoForge.jar",
+          "id": "Decorativewoodenlattices%201.21.1%20-%20v1.2%20-%20NeoForge.jar",
+          "name": "Decorativewoodenlattices%201.21.1%20-%20v1.2%20-%20NeoForge.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/Decorativewoodenlattices%201.21.1%20-%20v1.2%20-%20NeoForge.jar"
@@ -400,8 +400,8 @@
           }
         },
         {
-          "id": "Explorify v1.6.2 f10-48.jar",
-          "name": "Explorify v1.6.2 f10-48.jar",
+          "id": "Explorify%20v1.6.2%20f10-48.jar",
+          "name": "Explorify%20v1.6.2%20f10-48.jar",
           "type": "UnknownMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/Explorify%20v1.6.2%20f10-48.jar"
@@ -488,8 +488,8 @@
           }
         },
         {
-          "id": "Geophilic v3.4.2 f15-80.mod.jar",
-          "name": "Geophilic v3.4.2 f15-80.mod.jar",
+          "id": "Geophilic%20v3.4.2%20f15-80.mod.jar",
+          "name": "Geophilic%20v3.4.2%20f15-80.mod.jar",
           "type": "UnknownMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/Geophilic%20v3.4.2%20f15-80.mod.jar"
@@ -536,16 +536,16 @@
           }
         },
         {
-          "id": "ImmediatelyFast-NeoForge-1.6.6+1.21.1.jar",
-          "name": "ImmediatelyFast-NeoForge-1.6.6+1.21.1.jar",
+          "id": "ImmediatelyFast-NeoForge-1.6.6%2B1.21.1.jar",
+          "name": "ImmediatelyFast-NeoForge-1.6.6%2B1.21.1.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/ImmediatelyFast-NeoForge-1.6.6%2B1.21.1.jar"
           }
         },
         {
-          "id": "ImmersiveThunder-1.21.1+1.2.2.jar",
-          "name": "ImmersiveThunder-1.21.1+1.2.2.jar",
+          "id": "ImmersiveThunder-1.21.1%2B1.2.2.jar",
+          "name": "ImmersiveThunder-1.21.1%2B1.2.2.jar",
           "type": "UnknownMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/ImmersiveThunder-1.21.1%2B1.2.2.jar"
@@ -584,11 +584,11 @@
           }
         },
         {
-          "id": "Kaffee's_Dual_Ride-1.1.0.jar",
-          "name": "Kaffee's_Dual_Ride-1.1.0.jar",
+          "id": "Kaffee%27s_Dual_Ride-1.1.0.jar",
+          "name": "Kaffee%27s_Dual_Ride-1.1.0.jar",
           "type": "UnknownMod",
           "artifact": {
-            "url": "https://newhorizons.games/launcher/mods/Kaffee's_Dual_Ride-1.1.0.jar"
+            "url": "https://newhorizons.games/launcher/mods/Kaffee%27s_Dual_Ride-1.1.0.jar"
           }
         },
         {
@@ -600,11 +600,11 @@
           }
         },
         {
-          "id": "Koopa's Critters_1.21.1Neoforge_V0.0.3.3BETA.jar",
-          "name": "Koopa's Critters_1.21.1Neoforge_V0.0.3.3BETA.jar",
+          "id": "Koopa%27s%20Critters_1.21.1Neoforge_V0.0.3.3BETA.jar",
+          "name": "Koopa%27s%20Critters_1.21.1Neoforge_V0.0.3.3BETA.jar",
           "type": "NeoForgeMod",
           "artifact": {
-            "url": "https://newhorizons.games/launcher/mods/Koopa's%20Critters_1.21.1Neoforge_V0.0.3.3BETA.jar"
+            "url": "https://newhorizons.games/launcher/mods/Koopa%27s%20Critters_1.21.1Neoforge_V0.0.3.3BETA.jar"
           }
         },
         {
@@ -632,8 +632,8 @@
           }
         },
         {
-          "id": "Luminous Butterflies V1.2 - NeoForge 1.21.1.jar",
-          "name": "Luminous Butterflies V1.2 - NeoForge 1.21.1.jar",
+          "id": "Luminous%20Butterflies%20V1.2%20-%20NeoForge%201.21.1.jar",
+          "name": "Luminous%20Butterflies%20V1.2%20-%20NeoForge%201.21.1.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/Luminous%20Butterflies%20V1.2%20-%20NeoForge%201.21.1.jar"
@@ -672,24 +672,24 @@
           }
         },
         {
-          "id": "Necronomicon-Fabric-1.6.0+1.21.jar",
-          "name": "Necronomicon-Fabric-1.6.0+1.21.jar",
+          "id": "Necronomicon-Fabric-1.6.0%2B1.21.jar",
+          "name": "Necronomicon-Fabric-1.6.0%2B1.21.jar",
           "type": "FabricMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/Necronomicon-Fabric-1.6.0%2B1.21.jar"
           }
         },
         {
-          "id": "NeoMTR-300.6.1+1.21.1+neoforge.jar",
-          "name": "NeoMTR-300.6.1+1.21.1+neoforge.jar",
+          "id": "NeoMTR-300.6.1%2B1.21.1%2Bneoforge.jar",
+          "name": "NeoMTR-300.6.1%2B1.21.1%2Bneoforge.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/NeoMTR-300.6.1%2B1.21.1%2Bneoforge.jar"
           }
         },
         {
-          "id": "Noteable-2.1.0+1.21.1-neoforge.jar",
-          "name": "Noteable-2.1.0+1.21.1-neoforge.jar",
+          "id": "Noteable-2.1.0%2B1.21.1-neoforge.jar",
+          "name": "Noteable-2.1.0%2B1.21.1-neoforge.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/Noteable-2.1.0%2B1.21.1-neoforge.jar"
@@ -704,8 +704,8 @@
           }
         },
         {
-          "id": "OmniCore-0.37.0+1.21.1-neoforge.jar",
-          "name": "OmniCore-0.37.0+1.21.1-neoforge.jar",
+          "id": "OmniCore-0.37.0%2B1.21.1-neoforge.jar",
+          "name": "OmniCore-0.37.0%2B1.21.1-neoforge.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/OmniCore-0.37.0%2B1.21.1-neoforge.jar"
@@ -720,8 +720,8 @@
           }
         },
         {
-          "id": "ParticleEffects-1.0.5+1.21.1.jar",
-          "name": "ParticleEffects-1.0.5+1.21.1.jar",
+          "id": "ParticleEffects-1.0.5%2B1.21.1.jar",
+          "name": "ParticleEffects-1.0.5%2B1.21.1.jar",
           "type": "UnknownMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/ParticleEffects-1.0.5%2B1.21.1.jar"
@@ -752,8 +752,8 @@
           }
         },
         {
-          "id": "PickablePets-1.3.4+1.21.1-neoforge.jar",
-          "name": "PickablePets-1.3.4+1.21.1-neoforge.jar",
+          "id": "PickablePets-1.3.4%2B1.21.1-neoforge.jar",
+          "name": "PickablePets-1.3.4%2B1.21.1-neoforge.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/PickablePets-1.3.4%2B1.21.1-neoforge.jar"
@@ -768,16 +768,16 @@
           }
         },
         {
-          "id": "PresenceFootsteps-1.10.2+1.21.jar",
-          "name": "PresenceFootsteps-1.10.2+1.21.jar",
+          "id": "PresenceFootsteps-1.10.2%2B1.21.jar",
+          "name": "PresenceFootsteps-1.10.2%2B1.21.jar",
           "type": "UnknownMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/PresenceFootsteps-1.10.2%2B1.21.jar"
           }
         },
         {
-          "id": "Pretty Rain-1.21.1-NeoForge-1.1.4.jar",
-          "name": "Pretty Rain-1.21.1-NeoForge-1.1.4.jar",
+          "id": "Pretty%20Rain-1.21.1-NeoForge-1.1.4.jar",
+          "name": "Pretty%20Rain-1.21.1-NeoForge-1.1.4.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/Pretty%20Rain-1.21.1-NeoForge-1.1.4.jar"
@@ -800,24 +800,24 @@
           }
         },
         {
-          "id": "Recipes For Create-1.2.1.jar",
-          "name": "Recipes For Create-1.2.1.jar",
+          "id": "Recipes%20For%20Create-1.2.1.jar",
+          "name": "Recipes%20For%20Create-1.2.1.jar",
           "type": "UnknownMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/Recipes%20For%20Create-1.2.1.jar"
           }
         },
         {
-          "id": "ScalableLux-0.1.0+beta.2+neoforge.1a07a27-all.jar",
-          "name": "ScalableLux-0.1.0+beta.2+neoforge.1a07a27-all.jar",
+          "id": "ScalableLux-0.1.0%2Bbeta.2%2Bneoforge.1a07a27-all.jar",
+          "name": "ScalableLux-0.1.0%2Bbeta.2%2Bneoforge.1a07a27-all.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/ScalableLux-0.1.0%2Bbeta.2%2Bneoforge.1a07a27-all.jar"
           }
         },
         {
-          "id": "Scribble-1.5.1+mc1.21-neoforge.jar",
-          "name": "Scribble-1.5.1+mc1.21-neoforge.jar",
+          "id": "Scribble-1.5.1%2Bmc1.21-neoforge.jar",
+          "name": "Scribble-1.5.1%2Bmc1.21-neoforge.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/Scribble-1.5.1%2Bmc1.21-neoforge.jar"
@@ -840,8 +840,8 @@
           }
         },
         {
-          "id": "Simple Incubator v1.1.jar",
-          "name": "Simple Incubator v1.1.jar",
+          "id": "Simple%20Incubator%20v1.1.jar",
+          "name": "Simple%20Incubator%20v1.1.jar",
           "type": "UnknownMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/Simple%20Incubator%20v1.1.jar"
@@ -856,8 +856,8 @@
           }
         },
         {
-          "id": "SneakFix-1.0+mc1.21.4.jar",
-          "name": "SneakFix-1.0+mc1.21.4.jar",
+          "id": "SneakFix-1.0%2Bmc1.21.4.jar",
+          "name": "SneakFix-1.0%2Bmc1.21.4.jar",
           "type": "UnknownMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/SneakFix-1.0%2Bmc1.21.4.jar"
@@ -872,8 +872,8 @@
           }
         },
         {
-          "id": "Stam1oCreateTweaks-1.0.7+1.21.1-Neo.jar",
-          "name": "Stam1oCreateTweaks-1.0.7+1.21.1-Neo.jar",
+          "id": "Stam1oCreateTweaks-1.0.7%2B1.21.1-Neo.jar",
+          "name": "Stam1oCreateTweaks-1.0.7%2B1.21.1-Neo.jar",
           "type": "UnknownMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/Stam1oCreateTweaks-1.0.7%2B1.21.1-Neo.jar"
@@ -960,8 +960,8 @@
           }
         },
         {
-          "id": "UniLib-1.1.0+1.21.1-neoforge.jar",
-          "name": "UniLib-1.1.0+1.21.1-neoforge.jar",
+          "id": "UniLib-1.1.0%2B1.21.1-neoforge.jar",
+          "name": "UniLib-1.1.0%2B1.21.1-neoforge.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/UniLib-1.1.0%2B1.21.1-neoforge.jar"
@@ -992,8 +992,8 @@
           }
         },
         {
-          "id": "WaxedIcons-1.1+1.21.jar",
-          "name": "WaxedIcons-1.1+1.21.jar",
+          "id": "WaxedIcons-1.1%2B1.21.jar",
+          "name": "WaxedIcons-1.1%2B1.21.jar",
           "type": "UnknownMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/WaxedIcons-1.1%2B1.21.jar"
@@ -1104,32 +1104,32 @@
           }
         },
         {
-          "id": "[1.21.1] SecurityCraft v1.10.jar",
-          "name": "[1.21.1] SecurityCraft v1.10.jar",
+          "id": "%5B1.21.1%5D%20SecurityCraft%20v1.10.jar",
+          "name": "%5B1.21.1%5D%20SecurityCraft%20v1.10.jar",
           "type": "UnknownMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/%5B1.21.1%5D%20SecurityCraft%20v1.10.jar"
           }
         },
         {
-          "id": "[NeoForge]Lets_Forge_Pirates_[1_21_1]_4.jar",
-          "name": "[NeoForge]Lets_Forge_Pirates_[1_21_1]_4.jar",
+          "id": "%5BNeoForge%5DLets_Forge_Pirates_%5B1_21_1%5D_4.jar",
+          "name": "%5BNeoForge%5DLets_Forge_Pirates_%5B1_21_1%5D_4.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/%5BNeoForge%5DLets_Forge_Pirates_%5B1_21_1%5D_4.jar"
           }
         },
         {
-          "id": "[neoforge]ctov-3.5.9a.jar",
-          "name": "[neoforge]ctov-3.5.9a.jar",
+          "id": "%5Bneoforge%5Dctov-3.5.9a.jar",
+          "name": "%5Bneoforge%5Dctov-3.5.9a.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/%5Bneoforge%5Dctov-3.5.9a.jar"
           }
         },
         {
-          "id": "aa4-atlas-1.1.1+1.21.jar",
-          "name": "aa4-atlas-1.1.1+1.21.jar",
+          "id": "aa4-atlas-1.1.1%2B1.21.jar",
+          "name": "aa4-atlas-1.1.1%2B1.21.jar",
           "type": "UnknownMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/aa4-atlas-1.1.1%2B1.21.jar"
@@ -1144,16 +1144,16 @@
           }
         },
         {
-          "id": "accessories-neoforge-1.1.0-beta.45+1.21.1.jar",
-          "name": "accessories-neoforge-1.1.0-beta.45+1.21.1.jar",
+          "id": "accessories-neoforge-1.1.0-beta.45%2B1.21.1.jar",
+          "name": "accessories-neoforge-1.1.0-beta.45%2B1.21.1.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/accessories-neoforge-1.1.0-beta.45%2B1.21.1.jar"
           }
         },
         {
-          "id": "accessorify-2.1.2+1.21.1.jar",
-          "name": "accessorify-2.1.2+1.21.1.jar",
+          "id": "accessorify-2.1.2%2B1.21.1.jar",
+          "name": "accessorify-2.1.2%2B1.21.1.jar",
           "type": "UnknownMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/accessorify-2.1.2%2B1.21.1.jar"
@@ -1176,19 +1176,19 @@
           }
         },
         {
-          "id": "animal_feeding_trough-1.1.2+1.21-neoforge.jar",
-          "name": "animal_feeding_trough-1.1.2+1.21-neoforge.jar",
+          "id": "animal_feeding_trough-1.1.2%2B1.21-neoforge.jar",
+          "name": "animal_feeding_trough-1.1.2%2B1.21-neoforge.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/animal_feeding_trough-1.1.2%2B1.21-neoforge.jar"
           }
         },
         {
-          "id": "animalplus neoforge 1.21.1 (1.0.1v.).jar",
-          "name": "animalplus neoforge 1.21.1 (1.0.1v.).jar",
+          "id": "animalplus%20neoforge%201.21.1%20%281.0.1v.%29.jar",
+          "name": "animalplus%20neoforge%201.21.1%20%281.0.1v.%29.jar",
           "type": "NeoForgeMod",
           "artifact": {
-            "url": "https://newhorizons.games/launcher/mods/animalplus%20neoforge%201.21.1%20(1.0.1v.).jar"
+            "url": "https://newhorizons.games/launcher/mods/animalplus%20neoforge%201.21.1%20%281.0.1v.%29.jar"
           }
         },
         {
@@ -1200,8 +1200,8 @@
           }
         },
         {
-          "id": "antique-atlas-2.11.2+1.21.jar",
-          "name": "antique-atlas-2.11.2+1.21.jar",
+          "id": "antique-atlas-2.11.2%2B1.21.jar",
+          "name": "antique-atlas-2.11.2%2B1.21.jar",
           "type": "UnknownMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/antique-atlas-2.11.2%2B1.21.jar"
@@ -1264,8 +1264,8 @@
           }
         },
         {
-          "id": "astrocraft-1.5.1+1.21.jar",
-          "name": "astrocraft-1.5.1+1.21.jar",
+          "id": "astrocraft-1.5.1%2B1.21.jar",
+          "name": "astrocraft-1.5.1%2B1.21.jar",
           "type": "UnknownMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/astrocraft-1.5.1%2B1.21.jar"
@@ -1280,8 +1280,8 @@
           }
         },
         {
-          "id": "autohud-8.7+1.21.1-neoforge.jar",
-          "name": "autohud-8.7+1.21.1-neoforge.jar",
+          "id": "autohud-8.7%2B1.21.1-neoforge.jar",
+          "name": "autohud-8.7%2B1.21.1-neoforge.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/autohud-8.7%2B1.21.1-neoforge.jar"
@@ -1336,8 +1336,8 @@
           }
         },
         {
-          "id": "barbequesdelight-1.2.0+3.jar",
-          "name": "barbequesdelight-1.2.0+3.jar",
+          "id": "barbequesdelight-1.2.0%2B3.jar",
+          "name": "barbequesdelight-1.2.0%2B3.jar",
           "type": "UnknownMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/barbequesdelight-1.2.0%2B3.jar"
@@ -1408,8 +1408,8 @@
           }
         },
         {
-          "id": "better_mcdonalds_mod-neoforge-4.4.4+1.21.1.jar",
-          "name": "better_mcdonalds_mod-neoforge-4.4.4+1.21.1.jar",
+          "id": "better_mcdonalds_mod-neoforge-4.4.4%2B1.21.1.jar",
+          "name": "better_mcdonalds_mod-neoforge-4.4.4%2B1.21.1.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/better_mcdonalds_mod-neoforge-4.4.4%2B1.21.1.jar"
@@ -1456,8 +1456,8 @@
           }
         },
         {
-          "id": "birdnest-neoforge-1.2.0+mc1.21.1.jar",
-          "name": "birdnest-neoforge-1.2.0+mc1.21.1.jar",
+          "id": "birdnest-neoforge-1.2.0%2Bmc1.21.1.jar",
+          "name": "birdnest-neoforge-1.2.0%2Bmc1.21.1.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/birdnest-neoforge-1.2.0%2Bmc1.21.1.jar"
@@ -1568,8 +1568,8 @@
           }
         },
         {
-          "id": "brewingteatales+[1.21.1]+v1.0.1+NEOFORGE.jar",
-          "name": "brewingteatales+[1.21.1]+v1.0.1+NEOFORGE.jar",
+          "id": "brewingteatales%2B%5B1.21.1%5D%2Bv1.0.1%2BNEOFORGE.jar",
+          "name": "brewingteatales%2B%5B1.21.1%5D%2Bv1.0.1%2BNEOFORGE.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/brewingteatales%2B%5B1.21.1%5D%2Bv1.0.1%2BNEOFORGE.jar"
@@ -1600,8 +1600,8 @@
           }
         },
         {
-          "id": "buoys-0.1.1+1.21.1.jar",
-          "name": "buoys-0.1.1+1.21.1.jar",
+          "id": "buoys-0.1.1%2B1.21.1.jar",
+          "name": "buoys-0.1.1%2B1.21.1.jar",
           "type": "UnknownMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/buoys-0.1.1%2B1.21.1.jar"
@@ -1616,16 +1616,16 @@
           }
         },
         {
-          "id": "c2me-neoforge-mc1.21.1-0.3.0+alpha.0.72.jar",
-          "name": "c2me-neoforge-mc1.21.1-0.3.0+alpha.0.72.jar",
+          "id": "c2me-neoforge-mc1.21.1-0.3.0%2Balpha.0.72.jar",
+          "name": "c2me-neoforge-mc1.21.1-0.3.0%2Balpha.0.72.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/c2me-neoforge-mc1.21.1-0.3.0%2Balpha.0.72.jar"
           }
         },
         {
-          "id": "cakechomps-neoforge-10.0.1+1.21.1.jar",
-          "name": "cakechomps-neoforge-10.0.1+1.21.1.jar",
+          "id": "cakechomps-neoforge-10.0.1%2B1.21.1.jar",
+          "name": "cakechomps-neoforge-10.0.1%2B1.21.1.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/cakechomps-neoforge-10.0.1%2B1.21.1.jar"
@@ -1704,8 +1704,8 @@
           }
         },
         {
-          "id": "cherishedworlds-neoforge-10.1.1+1.21.1.jar",
-          "name": "cherishedworlds-neoforge-10.1.1+1.21.1.jar",
+          "id": "cherishedworlds-neoforge-10.1.1%2B1.21.1.jar",
+          "name": "cherishedworlds-neoforge-10.1.1%2B1.21.1.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/cherishedworlds-neoforge-10.1.1%2B1.21.1.jar"
@@ -1752,8 +1752,8 @@
           }
         },
         {
-          "id": "city_roads-neoforge-0.5+1.21.1.jar",
-          "name": "city_roads-neoforge-0.5+1.21.1.jar",
+          "id": "city_roads-neoforge-0.5%2B1.21.1.jar",
+          "name": "city_roads-neoforge-0.5%2B1.21.1.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/city_roads-neoforge-0.5%2B1.21.1.jar"
@@ -1784,16 +1784,16 @@
           }
         },
         {
-          "id": "combat_roll-neoforge-2.0.4+1.21.1.jar",
-          "name": "combat_roll-neoforge-2.0.4+1.21.1.jar",
+          "id": "combat_roll-neoforge-2.0.4%2B1.21.1.jar",
+          "name": "combat_roll-neoforge-2.0.4%2B1.21.1.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/combat_roll-neoforge-2.0.4%2B1.21.1.jar"
           }
         },
         {
-          "id": "comforts-neoforge-9.0.4+1.21.1.jar",
-          "name": "comforts-neoforge-9.0.4+1.21.1.jar",
+          "id": "comforts-neoforge-9.0.4%2B1.21.1.jar",
+          "name": "comforts-neoforge-9.0.4%2B1.21.1.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/comforts-neoforge-9.0.4%2B1.21.1.jar"
@@ -1808,8 +1808,8 @@
           }
         },
         {
-          "id": "connected-doors-1.3+1.21.jar",
-          "name": "connected-doors-1.3+1.21.jar",
+          "id": "connected-doors-1.3%2B1.21.jar",
+          "name": "connected-doors-1.3%2B1.21.jar",
           "type": "UnknownMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/connected-doors-1.3%2B1.21.jar"
@@ -1832,8 +1832,8 @@
           }
         },
         {
-          "id": "connector-2.0.0-beta.8+1.21.1-full.jar",
-          "name": "connector-2.0.0-beta.8+1.21.1-full.jar",
+          "id": "connector-2.0.0-beta.8%2B1.21.1-full.jar",
+          "name": "connector-2.0.0-beta.8%2B1.21.1-full.jar",
           "type": "UnknownMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/connector-2.0.0-beta.8%2B1.21.1-full.jar"
@@ -1864,8 +1864,8 @@
           }
         },
         {
-          "id": "copycats-3.0.2+mc.1.21.1-neoforge.jar",
-          "name": "copycats-3.0.2+mc.1.21.1-neoforge.jar",
+          "id": "copycats-3.0.2%2Bmc.1.21.1-neoforge.jar",
+          "name": "copycats-3.0.2%2Bmc.1.21.1-neoforge.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/copycats-3.0.2%2Bmc.1.21.1-neoforge.jar"
@@ -2168,8 +2168,8 @@
           }
         },
         {
-          "id": "creaturechat-2.5.0+1.21.1-neoforge.jar",
-          "name": "creaturechat-2.5.0+1.21.1-neoforge.jar",
+          "id": "creaturechat-2.5.0%2B1.21.1-neoforge.jar",
+          "name": "creaturechat-2.5.0%2B1.21.1-neoforge.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/creaturechat-2.5.0%2B1.21.1-neoforge.jar"
@@ -2200,8 +2200,8 @@
           }
         },
         {
-          "id": "cryonicconfig-neoforge-1.0.0+mc1.21.7.jar",
-          "name": "cryonicconfig-neoforge-1.0.0+mc1.21.7.jar",
+          "id": "cryonicconfig-neoforge-1.0.0%2Bmc1.21.7.jar",
+          "name": "cryonicconfig-neoforge-1.0.0%2Bmc1.21.7.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/cryonicconfig-neoforge-1.0.0%2Bmc1.21.7.jar"
@@ -2232,8 +2232,8 @@
           }
         },
         {
-          "id": "curios-neoforge-9.5.1+1.21.1.jar",
-          "name": "curios-neoforge-9.5.1+1.21.1.jar",
+          "id": "curios-neoforge-9.5.1%2B1.21.1.jar",
+          "name": "curios-neoforge-9.5.1%2B1.21.1.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/curios-neoforge-9.5.1%2B1.21.1.jar"
@@ -2280,8 +2280,8 @@
           }
         },
         {
-          "id": "decorativelattices 1.21.1 - 1.0 NeoForge.jar",
-          "name": "decorativelattices 1.21.1 - 1.0 NeoForge.jar",
+          "id": "decorativelattices%201.21.1%20-%201.0%20NeoForge.jar",
+          "name": "decorativelattices%201.21.1%20-%201.0%20NeoForge.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/decorativelattices%201.21.1%20-%201.0%20NeoForge.jar"
@@ -2312,8 +2312,8 @@
           }
         },
         {
-          "id": "do_a_barrel_roll-neoforge-3.7.3+1.21.jar",
-          "name": "do_a_barrel_roll-neoforge-3.7.3+1.21.jar",
+          "id": "do_a_barrel_roll-neoforge-3.7.3%2B1.21.jar",
+          "name": "do_a_barrel_roll-neoforge-3.7.3%2B1.21.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/do_a_barrel_roll-neoforge-3.7.3%2B1.21.jar"
@@ -2328,8 +2328,8 @@
           }
         },
         {
-          "id": "door_knocking-1.0.1+1.21-neoforge.jar",
-          "name": "door_knocking-1.0.1+1.21-neoforge.jar",
+          "id": "door_knocking-1.0.1%2B1.21-neoforge.jar",
+          "name": "door_knocking-1.0.1%2B1.21-neoforge.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/door_knocking-1.0.1%2B1.21-neoforge.jar"
@@ -2424,32 +2424,32 @@
           }
         },
         {
-          "id": "embeddium-1.0.15+mc1.21.1.jar",
-          "name": "embeddium-1.0.15+mc1.21.1.jar",
+          "id": "embeddium-1.0.15%2Bmc1.21.1.jar",
+          "name": "embeddium-1.0.15%2Bmc1.21.1.jar",
           "type": "UnknownMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/embeddium-1.0.15%2Bmc1.21.1.jar"
           }
         },
         {
-          "id": "emi-1.1.22+1.21.1+neoforge.jar",
-          "name": "emi-1.1.22+1.21.1+neoforge.jar",
+          "id": "emi-1.1.22%2B1.21.1%2Bneoforge.jar",
+          "name": "emi-1.1.22%2B1.21.1%2Bneoforge.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/emi-1.1.22%2B1.21.1%2Bneoforge.jar"
           }
         },
         {
-          "id": "emi_enchanting-0.1.2+1.21+neoforge.jar",
-          "name": "emi_enchanting-0.1.2+1.21+neoforge.jar",
+          "id": "emi_enchanting-0.1.2%2B1.21%2Bneoforge.jar",
+          "name": "emi_enchanting-0.1.2%2B1.21%2Bneoforge.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/emi_enchanting-0.1.2%2B1.21%2Bneoforge.jar"
           }
         },
         {
-          "id": "emi_loot-0.7.6+1.21+neoforge.jar",
-          "name": "emi_loot-0.7.6+1.21+neoforge.jar",
+          "id": "emi_loot-0.7.6%2B1.21%2Bneoforge.jar",
+          "name": "emi_loot-0.7.6%2B1.21%2Bneoforge.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/emi_loot-0.7.6%2B1.21%2Bneoforge.jar"
@@ -2472,8 +2472,8 @@
           }
         },
         {
-          "id": "enhancedblockentities-0.10.2+1.21.jar",
-          "name": "enhancedblockentities-0.10.2+1.21.jar",
+          "id": "enhancedblockentities-0.10.2%2B1.21.jar",
+          "name": "enhancedblockentities-0.10.2%2B1.21.jar",
           "type": "UnknownMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/enhancedblockentities-0.10.2%2B1.21.jar"
@@ -2576,16 +2576,16 @@
           }
         },
         {
-          "id": "fabric-api-0.116.4+1.21.1.jar",
-          "name": "fabric-api-0.116.4+1.21.1.jar",
+          "id": "fabric-api-0.116.4%2B1.21.1.jar",
+          "name": "fabric-api-0.116.4%2B1.21.1.jar",
           "type": "FabricMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/fabric-api-0.116.4%2B1.21.1.jar"
           }
         },
         {
-          "id": "fabric-language-kotlin-1.13.4+kotlin.2.2.0.jar",
-          "name": "fabric-language-kotlin-1.13.4+kotlin.2.2.0.jar",
+          "id": "fabric-language-kotlin-1.13.4%2Bkotlin.2.2.0.jar",
+          "name": "fabric-language-kotlin-1.13.4%2Bkotlin.2.2.0.jar",
           "type": "FabricMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/fabric-language-kotlin-1.13.4%2Bkotlin.2.2.0.jar"
@@ -2688,8 +2688,8 @@
           }
         },
         {
-          "id": "flashlight TCT V4.6-forge-1.21.1.jar",
-          "name": "flashlight TCT V4.6-forge-1.21.1.jar",
+          "id": "flashlight%20TCT%20V4.6-forge-1.21.1.jar",
+          "name": "flashlight%20TCT%20V4.6-forge-1.21.1.jar",
           "type": "ForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/flashlight%20TCT%20V4.6-forge-1.21.1.jar"
@@ -2728,8 +2728,8 @@
           }
         },
         {
-          "id": "forgified-fabric-api-0.115.6+2.1.1+1.21.1.jar",
-          "name": "forgified-fabric-api-0.115.6+2.1.1+1.21.1.jar",
+          "id": "forgified-fabric-api-0.115.6%2B2.1.1%2B1.21.1.jar",
+          "name": "forgified-fabric-api-0.115.6%2B2.1.1%2B1.21.1.jar",
           "type": "FabricMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/forgified-fabric-api-0.115.6%2B2.1.1%2B1.21.1.jar"
@@ -2744,16 +2744,16 @@
           }
         },
         {
-          "id": "formationsoverworld-1.0.4-mc1.21+.jar",
-          "name": "formationsoverworld-1.0.4-mc1.21+.jar",
+          "id": "formationsoverworld-1.0.4-mc1.21%2B.jar",
+          "name": "formationsoverworld-1.0.4-mc1.21%2B.jar",
           "type": "UnknownMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/formationsoverworld-1.0.4-mc1.21%2B.jar"
           }
         },
         {
-          "id": "fowlplay-1.0.0-beta.12+1.21.1-neoforge.jar",
-          "name": "fowlplay-1.0.0-beta.12+1.21.1-neoforge.jar",
+          "id": "fowlplay-1.0.0-beta.12%2B1.21.1-neoforge.jar",
+          "name": "fowlplay-1.0.0-beta.12%2B1.21.1-neoforge.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/fowlplay-1.0.0-beta.12%2B1.21.1-neoforge.jar"
@@ -2768,8 +2768,8 @@
           }
         },
         {
-          "id": "freecam-neoforge-1.3.0+mc1.21.jar",
-          "name": "freecam-neoforge-1.3.0+mc1.21.jar",
+          "id": "freecam-neoforge-1.3.0%2Bmc1.21.jar",
+          "name": "freecam-neoforge-1.3.0%2Bmc1.21.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/freecam-neoforge-1.3.0%2Bmc1.21.jar"
@@ -2848,8 +2848,8 @@
           }
         },
         {
-          "id": "furnitureexpanded-neoforge-1.2+1.21.1.jar",
-          "name": "furnitureexpanded-neoforge-1.2+1.21.1.jar",
+          "id": "furnitureexpanded-neoforge-1.2%2B1.21.1.jar",
+          "name": "furnitureexpanded-neoforge-1.2%2B1.21.1.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/furnitureexpanded-neoforge-1.2%2B1.21.1.jar"
@@ -2864,8 +2864,8 @@
           }
         },
         {
-          "id": "fzzy_config-0.7.1+1.21+neoforge.jar",
-          "name": "fzzy_config-0.7.1+1.21+neoforge.jar",
+          "id": "fzzy_config-0.7.1%2B1.21%2Bneoforge.jar",
+          "name": "fzzy_config-0.7.1%2B1.21%2Bneoforge.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/fzzy_config-0.7.1%2B1.21%2Bneoforge.jar"
@@ -2904,8 +2904,8 @@
           }
         },
         {
-          "id": "garnished-2.1.6.2+1.21.1-neoforged.jar",
-          "name": "garnished-2.1.6.2+1.21.1-neoforged.jar",
+          "id": "garnished-2.1.6.2%2B1.21.1-neoforged.jar",
+          "name": "garnished-2.1.6.2%2B1.21.1-neoforged.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/garnished-2.1.6.2%2B1.21.1-neoforged.jar"
@@ -3016,24 +3016,24 @@
           }
         },
         {
-          "id": "hotkettles-neoforge-1.2.1+mc1.21.1.jar",
-          "name": "hotkettles-neoforge-1.2.1+mc1.21.1.jar",
+          "id": "hotkettles-neoforge-1.2.1%2Bmc1.21.1.jar",
+          "name": "hotkettles-neoforge-1.2.1%2Bmc1.21.1.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/hotkettles-neoforge-1.2.1%2Bmc1.21.1.jar"
           }
         },
         {
-          "id": "icebreak-1.0.0+1.21.1.jar",
-          "name": "icebreak-1.0.0+1.21.1.jar",
+          "id": "icebreak-1.0.0%2B1.21.1.jar",
+          "name": "icebreak-1.0.0%2B1.21.1.jar",
           "type": "UnknownMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/icebreak-1.0.0%2B1.21.1.jar"
           }
         },
         {
-          "id": "immersive_aircraft-1.3.3+1.21.1-neoforge.jar",
-          "name": "immersive_aircraft-1.3.3+1.21.1-neoforge.jar",
+          "id": "immersive_aircraft-1.3.3%2B1.21.1-neoforge.jar",
+          "name": "immersive_aircraft-1.3.3%2B1.21.1-neoforge.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/immersive_aircraft-1.3.3%2B1.21.1-neoforge.jar"
@@ -3096,16 +3096,16 @@
           }
         },
         {
-          "id": "iris-neoforge-1.8.12+mc1.21.1.jar",
-          "name": "iris-neoforge-1.8.12+mc1.21.1.jar",
+          "id": "iris-neoforge-1.8.12%2Bmc1.21.1.jar",
+          "name": "iris-neoforge-1.8.12%2Bmc1.21.1.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/iris-neoforge-1.8.12%2Bmc1.21.1.jar"
           }
         },
         {
-          "id": "item-descriptions-neoforge-2.4.0+1.21.1.jar",
-          "name": "item-descriptions-neoforge-2.4.0+1.21.1.jar",
+          "id": "item-descriptions-neoforge-2.4.0%2B1.21.1.jar",
+          "name": "item-descriptions-neoforge-2.4.0%2B1.21.1.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/item-descriptions-neoforge-2.4.0%2B1.21.1.jar"
@@ -3120,11 +3120,11 @@
           }
         },
         {
-          "id": "jakes-build-tools-2.0.1.4-(1.21.1).jar",
-          "name": "jakes-build-tools-2.0.1.4-(1.21.1).jar",
+          "id": "jakes-build-tools-2.0.1.4-%281.21.1%29.jar",
+          "name": "jakes-build-tools-2.0.1.4-%281.21.1%29.jar",
           "type": "UnknownMod",
           "artifact": {
-            "url": "https://newhorizons.games/launcher/mods/jakes-build-tools-2.0.1.4-(1.21.1).jar"
+            "url": "https://newhorizons.games/launcher/mods/jakes-build-tools-2.0.1.4-%281.21.1%29.jar"
           }
         },
         {
@@ -3208,8 +3208,8 @@
           }
         },
         {
-          "id": "libjf-3.17.4+forge.jar",
-          "name": "libjf-3.17.4+forge.jar",
+          "id": "libjf-3.17.4%2Bforge.jar",
+          "name": "libjf-3.17.4%2Bforge.jar",
           "type": "ForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/libjf-3.17.4%2Bforge.jar"
@@ -3248,8 +3248,8 @@
           }
         },
         {
-          "id": "lithium-neoforge-0.15.0+mc1.21.1.jar",
-          "name": "lithium-neoforge-0.15.0+mc1.21.1.jar",
+          "id": "lithium-neoforge-0.15.0%2Bmc1.21.1.jar",
+          "name": "lithium-neoforge-0.15.0%2Bmc1.21.1.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/lithium-neoforge-0.15.0%2Bmc1.21.1.jar"
@@ -3304,16 +3304,16 @@
           }
         },
         {
-          "id": "marigolds-1.0.1-1.21(.1)-neoforge.jar",
-          "name": "marigolds-1.0.1-1.21(.1)-neoforge.jar",
+          "id": "marigolds-1.0.1-1.21%28.1%29-neoforge.jar",
+          "name": "marigolds-1.0.1-1.21%28.1%29-neoforge.jar",
           "type": "NeoForgeMod",
           "artifact": {
-            "url": "https://newhorizons.games/launcher/mods/marigolds-1.0.1-1.21(.1)-neoforge.jar"
+            "url": "https://newhorizons.games/launcher/mods/marigolds-1.0.1-1.21%28.1%29-neoforge.jar"
           }
         },
         {
-          "id": "mc-258859-1.0+1.21.jar",
-          "name": "mc-258859-1.0+1.21.jar",
+          "id": "mc-258859-1.0%2B1.21.jar",
+          "name": "mc-258859-1.0%2B1.21.jar",
           "type": "UnknownMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/mc-258859-1.0%2B1.21.jar"
@@ -3464,16 +3464,16 @@
           }
         },
         {
-          "id": "minopp-1.3.0+1.21.1+neoforge.jar",
-          "name": "minopp-1.3.0+1.21.1+neoforge.jar",
+          "id": "minopp-1.3.0%2B1.21.1%2Bneoforge.jar",
+          "name": "minopp-1.3.0%2B1.21.1%2Bneoforge.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/minopp-1.3.0%2B1.21.1%2Bneoforge.jar"
           }
         },
         {
-          "id": "misctweaks-1.2.1+1.21.1.jar",
-          "name": "misctweaks-1.2.1+1.21.1.jar",
+          "id": "misctweaks-1.2.1%2B1.21.1.jar",
+          "name": "misctweaks-1.2.1%2B1.21.1.jar",
           "type": "UnknownMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/misctweaks-1.2.1%2B1.21.1.jar"
@@ -3496,8 +3496,8 @@
           }
         },
         {
-          "id": "modernfix-neoforge-5.24.3+mc1.21.1.jar",
-          "name": "modernfix-neoforge-5.24.3+mc1.21.1.jar",
+          "id": "modernfix-neoforge-5.24.3%2Bmc1.21.1.jar",
+          "name": "modernfix-neoforge-5.24.3%2Bmc1.21.1.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/modernfix-neoforge-5.24.3%2Bmc1.21.1.jar"
@@ -3568,8 +3568,8 @@
           }
         },
         {
-          "id": "musicsync-1.3+1.21.jar",
-          "name": "musicsync-1.3+1.21.jar",
+          "id": "musicsync-1.3%2B1.21.jar",
+          "name": "musicsync-1.3%2B1.21.jar",
           "type": "UnknownMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/musicsync-1.3%2B1.21.jar"
@@ -3632,8 +3632,8 @@
           }
         },
         {
-          "id": "noisium-neoforge-2.3.0+mc1.21-1.21.1.jar",
-          "name": "noisium-neoforge-2.3.0+mc1.21-1.21.1.jar",
+          "id": "noisium-neoforge-2.3.0%2Bmc1.21-1.21.1.jar",
+          "name": "noisium-neoforge-2.3.0%2Bmc1.21-1.21.1.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/noisium-neoforge-2.3.0%2Bmc1.21-1.21.1.jar"
@@ -3664,8 +3664,8 @@
           }
         },
         {
-          "id": "now-playing-neoforge-1.5.14+1.21.jar",
-          "name": "now-playing-neoforge-1.5.14+1.21.jar",
+          "id": "now-playing-neoforge-1.5.14%2B1.21.jar",
+          "name": "now-playing-neoforge-1.5.14%2B1.21.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/now-playing-neoforge-1.5.14%2B1.21.jar"
@@ -3704,8 +3704,8 @@
           }
         },
         {
-          "id": "online-emotes-3.3.1+mc1.21.1-forge.jar",
-          "name": "online-emotes-3.3.1+mc1.21.1-forge.jar",
+          "id": "online-emotes-3.3.1%2Bmc1.21.1-forge.jar",
+          "name": "online-emotes-3.3.1%2Bmc1.21.1-forge.jar",
           "type": "ForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/online-emotes-3.3.1%2Bmc1.21.1-forge.jar"
@@ -3720,8 +3720,8 @@
           }
         },
         {
-          "id": "owo-lib-neoforge-0.12.15.1-beta.6+1.21.jar",
-          "name": "owo-lib-neoforge-0.12.15.1-beta.6+1.21.jar",
+          "id": "owo-lib-neoforge-0.12.15.1-beta.6%2B1.21.jar",
+          "name": "owo-lib-neoforge-0.12.15.1-beta.6%2B1.21.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/owo-lib-neoforge-0.12.15.1-beta.6%2B1.21.jar"
@@ -3816,16 +3816,16 @@
           }
         },
         {
-          "id": "player-animation-lib-fabric-2.0.1+1.21.1.jar",
-          "name": "player-animation-lib-fabric-2.0.1+1.21.1.jar",
+          "id": "player-animation-lib-fabric-2.0.1%2B1.21.1.jar",
+          "name": "player-animation-lib-fabric-2.0.1%2B1.21.1.jar",
           "type": "FabricMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/player-animation-lib-fabric-2.0.1%2B1.21.1.jar"
           }
         },
         {
-          "id": "player-animation-lib-forge-2.0.1+1.21.1.jar",
-          "name": "player-animation-lib-forge-2.0.1+1.21.1.jar",
+          "id": "player-animation-lib-forge-2.0.1%2B1.21.1.jar",
+          "name": "player-animation-lib-forge-2.0.1%2B1.21.1.jar",
           "type": "ForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/player-animation-lib-forge-2.0.1%2B1.21.1.jar"
@@ -3848,8 +3848,8 @@
           }
         },
         {
-          "id": "polymorph-neoforge-1.0.10+1.21.1.jar",
-          "name": "polymorph-neoforge-1.0.10+1.21.1.jar",
+          "id": "polymorph-neoforge-1.0.10%2B1.21.1.jar",
+          "name": "polymorph-neoforge-1.0.10%2B1.21.1.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/polymorph-neoforge-1.0.10%2B1.21.1.jar"
@@ -3896,8 +3896,8 @@
           }
         },
         {
-          "id": "psychedelicraft-1.8.5+1.21.jar",
-          "name": "psychedelicraft-1.8.5+1.21.jar",
+          "id": "psychedelicraft-1.8.5%2B1.21.jar",
+          "name": "psychedelicraft-1.8.5%2B1.21.jar",
           "type": "UnknownMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/psychedelicraft-1.8.5%2B1.21.jar"
@@ -3960,16 +3960,16 @@
           }
         },
         {
-          "id": "realistic-campfires-3.1.2+1.21.jar",
-          "name": "realistic-campfires-3.1.2+1.21.jar",
+          "id": "realistic-campfires-3.1.2%2B1.21.jar",
+          "name": "realistic-campfires-3.1.2%2B1.21.jar",
           "type": "UnknownMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/realistic-campfires-3.1.2%2B1.21.jar"
           }
         },
         {
-          "id": "realistic-farmland-1.0+1.21.jar",
-          "name": "realistic-farmland-1.0+1.21.jar",
+          "id": "realistic-farmland-1.0%2B1.21.jar",
+          "name": "realistic-farmland-1.0%2B1.21.jar",
           "type": "UnknownMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/realistic-farmland-1.0%2B1.21.jar"
@@ -3992,8 +3992,8 @@
           }
         },
         {
-          "id": "reeses-sodium-options-neoforge-1.8.3+mc1.21.4.jar",
-          "name": "reeses-sodium-options-neoforge-1.8.3+mc1.21.4.jar",
+          "id": "reeses-sodium-options-neoforge-1.8.3%2Bmc1.21.4.jar",
+          "name": "reeses-sodium-options-neoforge-1.8.3%2Bmc1.21.4.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/reeses-sodium-options-neoforge-1.8.3%2Bmc1.21.4.jar"
@@ -4024,16 +4024,16 @@
           }
         },
         {
-          "id": "ridehud-1.3.4+1.21.jar",
-          "name": "ridehud-1.3.4+1.21.jar",
+          "id": "ridehud-1.3.4%2B1.21.jar",
+          "name": "ridehud-1.3.4%2B1.21.jar",
           "type": "UnknownMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/ridehud-1.3.4%2B1.21.jar"
           }
         },
         {
-          "id": "rolling-down-in-the-deep-0.2.0+1.21.jar",
-          "name": "rolling-down-in-the-deep-0.2.0+1.21.jar",
+          "id": "rolling-down-in-the-deep-0.2.0%2B1.21.jar",
+          "name": "rolling-down-in-the-deep-0.2.0%2B1.21.jar",
           "type": "UnknownMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/rolling-down-in-the-deep-0.2.0%2B1.21.jar"
@@ -4104,8 +4104,8 @@
           }
         },
         {
-          "id": "shulkerboxtooltip-neoforge-5.1.6+1.21.1.jar",
-          "name": "shulkerboxtooltip-neoforge-5.1.6+1.21.1.jar",
+          "id": "shulkerboxtooltip-neoforge-5.1.6%2B1.21.1.jar",
+          "name": "shulkerboxtooltip-neoforge-5.1.6%2B1.21.1.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/shulkerboxtooltip-neoforge-5.1.6%2B1.21.1.jar"
@@ -4128,8 +4128,8 @@
           }
         },
         {
-          "id": "simpleclouds-0.6.3+1.21-all.jar",
-          "name": "simpleclouds-0.6.3+1.21-all.jar",
+          "id": "simpleclouds-0.6.3%2B1.21-all.jar",
+          "name": "simpleclouds-0.6.3%2B1.21-all.jar",
           "type": "UnknownMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/simpleclouds-0.6.3%2B1.21-all.jar"
@@ -4248,16 +4248,16 @@
           }
         },
         {
-          "id": "sodium-extra-neoforge-0.6.0+mc1.21.1.jar",
-          "name": "sodium-extra-neoforge-0.6.0+mc1.21.1.jar",
+          "id": "sodium-extra-neoforge-0.6.0%2Bmc1.21.1.jar",
+          "name": "sodium-extra-neoforge-0.6.0%2Bmc1.21.1.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/sodium-extra-neoforge-0.6.0%2Bmc1.21.1.jar"
           }
         },
         {
-          "id": "sodium-neoforge-0.6.13+mc1.21.1.jar",
-          "name": "sodium-neoforge-0.6.13+mc1.21.1.jar",
+          "id": "sodium-neoforge-0.6.13%2Bmc1.21.1.jar",
+          "name": "sodium-neoforge-0.6.13%2Bmc1.21.1.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/sodium-neoforge-0.6.13%2Bmc1.21.1.jar"
@@ -4304,8 +4304,8 @@
           }
         },
         {
-          "id": "sounds-2.4.12+1.21.1+neoforge.jar",
-          "name": "sounds-2.4.12+1.21.1+neoforge.jar",
+          "id": "sounds-2.4.12%2B1.21.1%2Bneoforge.jar",
+          "name": "sounds-2.4.12%2B1.21.1%2Bneoforge.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/sounds-2.4.12%2B1.21.1%2Bneoforge.jar"
@@ -4384,8 +4384,8 @@
           }
         },
         {
-          "id": "structurify-neoforge-1.0.18+mc1.21.1.jar",
-          "name": "structurify-neoforge-1.0.18+mc1.21.1.jar",
+          "id": "structurify-neoforge-1.0.18%2Bmc1.21.1.jar",
+          "name": "structurify-neoforge-1.0.18%2Bmc1.21.1.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/structurify-neoforge-1.0.18%2Bmc1.21.1.jar"
@@ -4440,11 +4440,11 @@
           }
         },
         {
-          "id": "swashbucklers! 2.6.6C 1.21.1 neoforge.jar",
-          "name": "swashbucklers! 2.6.6C 1.21.1 neoforge.jar",
+          "id": "swashbucklers%21%202.6.6C%201.21.1%20neoforge.jar",
+          "name": "swashbucklers%21%202.6.6C%201.21.1%20neoforge.jar",
           "type": "NeoForgeMod",
           "artifact": {
-            "url": "https://newhorizons.games/launcher/mods/swashbucklers!%202.6.6C%201.21.1%20neoforge.jar"
+            "url": "https://newhorizons.games/launcher/mods/swashbucklers%21%202.6.6C%201.21.1%20neoforge.jar"
           }
         },
         {
@@ -4464,8 +4464,8 @@
           }
         },
         {
-          "id": "textile-0.17.0+1.21.1-neoforge.jar",
-          "name": "textile-0.17.0+1.21.1-neoforge.jar",
+          "id": "textile-0.17.0%2B1.21.1-neoforge.jar",
+          "name": "textile-0.17.0%2B1.21.1-neoforge.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/textile-0.17.0%2B1.21.1-neoforge.jar"
@@ -4632,8 +4632,8 @@
           }
         },
         {
-          "id": "u_sea-1.2.2+mc1.19-1.21.7.jar",
-          "name": "u_sea-1.2.2+mc1.19-1.21.7.jar",
+          "id": "u_sea-1.2.2%2Bmc1.19-1.21.7.jar",
+          "name": "u_sea-1.2.2%2Bmc1.19-1.21.7.jar",
           "type": "UnknownMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/u_sea-1.2.2%2Bmc1.19-1.21.7.jar"
@@ -4672,8 +4672,8 @@
           }
         },
         {
-          "id": "vanillaconfig-1.2.11+1.21.jar",
-          "name": "vanillaconfig-1.2.11+1.21.jar",
+          "id": "vanillaconfig-1.2.11%2B1.21.jar",
+          "name": "vanillaconfig-1.2.11%2B1.21.jar",
           "type": "UnknownMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/vanillaconfig-1.2.11%2B1.21.jar"
@@ -4688,8 +4688,8 @@
           }
         },
         {
-          "id": "village_taverns-1.0.6+1.21.1.jar",
-          "name": "village_taverns-1.0.6+1.21.1.jar",
+          "id": "village_taverns-1.0.6%2B1.21.1.jar",
+          "name": "village_taverns-1.0.6%2B1.21.1.jar",
           "type": "UnknownMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/village_taverns-1.0.6%2B1.21.1.jar"
@@ -4704,8 +4704,8 @@
           }
         },
         {
-          "id": "visuality-0.7.7+1.21.jar",
-          "name": "visuality-0.7.7+1.21.jar",
+          "id": "visuality-0.7.7%2B1.21.jar",
+          "name": "visuality-0.7.7%2B1.21.jar",
           "type": "UnknownMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/visuality-0.7.7%2B1.21.jar"
@@ -4736,8 +4736,8 @@
           }
         },
         {
-          "id": "wakes-0.4.1+1.21.1.jar",
-          "name": "wakes-0.4.1+1.21.1.jar",
+          "id": "wakes-0.4.1%2B1.21.1.jar",
+          "name": "wakes-0.4.1%2B1.21.1.jar",
           "type": "UnknownMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/wakes-0.4.1%2B1.21.1.jar"
@@ -4808,8 +4808,8 @@
           }
         },
         {
-          "id": "winterly-0.11.2+1.21.jar",
-          "name": "winterly-0.11.2+1.21.jar",
+          "id": "winterly-0.11.2%2B1.21.jar",
+          "name": "winterly-0.11.2%2B1.21.jar",
           "type": "UnknownMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/winterly-0.11.2%2B1.21.jar"
@@ -4832,8 +4832,8 @@
           }
         },
         {
-          "id": "xdlib-6.0.0+1.21.1.jar",
-          "name": "xdlib-6.0.0+1.21.1.jar",
+          "id": "xdlib-6.0.0%2B1.21.1.jar",
+          "name": "xdlib-6.0.0%2B1.21.1.jar",
           "type": "UnknownMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/xdlib-6.0.0%2B1.21.1.jar"
@@ -4848,8 +4848,8 @@
           }
         },
         {
-          "id": "yet_another_config_lib_v3-3.7.1+1.21.1-neoforge.jar",
-          "name": "yet_another_config_lib_v3-3.7.1+1.21.1-neoforge.jar",
+          "id": "yet_another_config_lib_v3-3.7.1%2B1.21.1-neoforge.jar",
+          "name": "yet_another_config_lib_v3-3.7.1%2B1.21.1-neoforge.jar",
           "type": "NeoForgeMod",
           "artifact": {
             "url": "https://newhorizons.games/launcher/mods/yet_another_config_lib_v3-3.7.1%2B1.21.1-neoforge.jar"

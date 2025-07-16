@@ -4,9 +4,8 @@ const https = require('https');
 
 const TEMPLATE_PATH = 'distribution.template.json';
 const OUTPUT_PATH = 'distribution.json';
-const MODS_URL = 'https://newhorizons.games/launcher/mods/';
+const MODS_URL = 'https://newhorizons.games/launcher/mods/'; // Your remote mods directory
 
-// Fetches HTML from the remote mods directory
 function fetchHTML(url) {
     return new Promise((resolve, reject) => {
         https.get(url, res => {
@@ -17,21 +16,28 @@ function fetchHTML(url) {
     });
 }
 
-// Parses .jar links from directory listing HTML
+// Check if a filename is already percent-encoded
+function isEncoded(str) {
+    // Looks for at least one % followed by two hex chars (e.g., %20, %2B)
+    return /%[0-9A-Fa-f]{2}/.test(str);
+}
+
+// Extract .jar links from Apache/nginx directory listing HTML
 function parseModLinks(html) {
     const regex = /href="([^"]+\.jar)"/g;
     const links = [];
     let match;
     while ((match = regex.exec(html)) !== null) {
         // Only include direct .jar links (ignore parent folders etc)
-        if (!match[1].includes('/')) {
-            links.push(match[1]);
+        const file = match[1];
+        if (!file.includes('/')) {
+            links.push(file);
         }
     }
     return links;
 }
 
-// Detects mod type by filename
+// Determine mod type by filename (very basic; can be improved)
 function getModType(filename) {
     const lower = filename.toLowerCase();
     if (lower.includes('fabric')) return 'FabricMod';
@@ -41,45 +47,39 @@ function getModType(filename) {
     return 'UnknownMod';
 }
 
-// Main builder
 async function buildDistribution() {
     // 1. Load the template
     const template = JSON.parse(fs.readFileSync(TEMPLATE_PATH, 'utf8'));
 
-    // 2. Fetch remote directory listing
+    // 2. Fetch remote mod directory HTML
     console.log('Fetching mod listing...');
     const html = await fetchHTML(MODS_URL);
 
-    // 3. Parse mod .jar files
+    // 3. Parse all .jar mod files
     const modFiles = parseModLinks(html);
 
-    // 4. Build modules, encoding names ONCE ONLY
-    const modules = modFiles.map(filename => {
-        // Always decode and then encode to guarantee single-encoding
-        let decoded = filename;
-        try {
-            decoded = decodeURIComponent(filename);
-        } catch { /* ignore */ }
+    // 4. Build modules array with correct URL encoding
+    const modules = modFiles.map(filename => ({
+        id: filename,
+        name: filename,
+        type: getModType(filename),
+        artifact: {
+            url: `${MODS_URL}${isEncoded(filename) ? filename : encodeURIComponent(filename)}`
+        }
+    }));
 
-        return {
-            id: decoded,
-            name: decoded,
-            type: getModType(decoded),
-            artifact: {
-                url: `${MODS_URL}${encodeURIComponent(decoded)}`
-            }
-        };
-    });
-
-    // 5. Merge into template
+    // 5. Inject modules into template
+    if (!template.servers || !template.servers[0]) {
+        throw new Error('Template is missing servers array or servers[0].');
+    }
     template.servers[0].modules = modules;
 
-    // 6. Write output
+    // 6. Write updated distribution.json
     fs.writeFileSync(OUTPUT_PATH, JSON.stringify(template, null, 2));
     console.log(`Done! Wrote ${OUTPUT_PATH} with ${modules.length} mods.`);
 }
 
-// Run builder
+// Run the builder
 buildDistribution().catch(err => {
     console.error('Build failed:', err);
     process.exit(1);
