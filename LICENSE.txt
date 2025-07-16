@@ -1,0 +1,4 @@
+This is a fork of Helios Launcher by dscalzi (https://github.com/dscalzi/HeliosLauncher).
+Modified and redistributed as New Horizons Launcher.
+
+---

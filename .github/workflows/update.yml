@@ -1,0 +1,32 @@
+name: Update Distribution JSON
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # Every hour (set as needed)
+  workflow_dispatch:      # Allow manual runs
+
+jobs:
+  update-distribution:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.x'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build distribution.json
+        run: node build-distribution.js
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.email "actions@github.com"
+          git config --global user.name "GitHub Actions"
+          git add distribution.json
+          git commit -m "Auto-update distribution.json from remote mods directory" || echo "No changes to commit"
+          git push
