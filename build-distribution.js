@@ -5,11 +5,6 @@ const TEMPLATE_PATH = 'distribution.template.json';
 const OUTPUT_PATH = 'distribution.json';
 const MODS_URL = 'https://newhorizons.games/launcher/mods/';
 
-// Utility: Check if filename is already encoded (contains any %XX sequence)
-function isEncoded(filename) {
-    return /%[0-9A-Fa-f]{2}/.test(filename);
-}
-
 function fetchHTML(url) {
     return new Promise((resolve, reject) => {
         https.get(url, res => {
@@ -20,60 +15,53 @@ function fetchHTML(url) {
     });
 }
 
-// Extract .jar links from a simple directory listing HTML
 function parseModLinks(html) {
+    // Matches <a href="filename.jar">
     const regex = /href="([^"]+\.jar)"/g;
     const links = [];
     let match;
     while ((match = regex.exec(html)) !== null) {
-        // Only include direct .jar links (ignore parent folders etc)
-        if (!match[1].includes('/')) {
-            links.push(match[1]);
+        // Ignore subfolders and parent links
+        const filename = match[1];
+        if (!filename.includes('/')) {
+            links.push(decodeURIComponent(filename));
         }
     }
     return links;
 }
 
-// Determine mod type by filename (expand as needed)
 function getModType(filename) {
-    const fn = filename.toLowerCase();
-    if (fn.includes('fabric')) return 'FabricMod';
-    if (fn.includes('neoforge')) return 'NeoForgeMod';
-    if (fn.includes('forge')) return 'ForgeMod';
-    if (fn.includes('quilt')) return 'QuiltMod';
+    filename = filename.toLowerCase();
+    if (filename.includes('fabric')) return 'FabricMod';
+    if (filename.includes('neoforge')) return 'NeoForgeMod';
+    if (filename.includes('forge')) return 'ForgeMod';
+    if (filename.includes('quilt')) return 'QuiltMod';
     return 'UnknownMod';
 }
 
 async function buildDistribution() {
-    // 1. Load the template
     const template = JSON.parse(fs.readFileSync(TEMPLATE_PATH, 'utf8'));
 
-    // 2. Fetch directory listing from your mods URL
     console.log('Fetching mod listing...');
     const html = await fetchHTML(MODS_URL);
 
-    // 3. Parse all mod .jar files
     const modFiles = parseModLinks(html);
 
-    // 4. Build the modules array, avoiding double encoding
     const modules = modFiles.map(filename => ({
-        id: filename,
-        name: filename,
+        id: filename, // RAW filename
+        name: filename, // RAW filename
         type: getModType(filename),
         artifact: {
-            url: `${MODS_URL}${isEncoded(filename) ? filename : encodeURIComponent(filename)}`
+            url: `${MODS_URL}${encodeURIComponent(filename)}`
         }
     }));
 
-    // 5. Merge into template
     template.servers[0].modules = modules;
 
-    // 6. Output final distribution.json
     fs.writeFileSync(OUTPUT_PATH, JSON.stringify(template, null, 2));
     console.log(`Done! Wrote ${OUTPUT_PATH} with ${modules.length} mods.`);
 }
 
-// Run the builder
 buildDistribution().catch(err => {
     console.error('Build failed:', err);
     process.exit(1);
