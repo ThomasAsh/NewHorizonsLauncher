@@ -1,10 +1,14 @@
 const fs = require('fs');
-const path = require('path');
 const https = require('https');
 
 const TEMPLATE_PATH = 'distribution.template.json';
 const OUTPUT_PATH = 'distribution.json';
-const MODS_URL = 'https://newhorizons.games/launcher/mods/'; // Your remote mods directory
+const MODS_URL = 'https://newhorizons.games/launcher/mods/';
+
+// Utility: Check if filename is already encoded (contains any %XX sequence)
+function isEncoded(filename) {
+    return /%[0-9A-Fa-f]{2}/.test(filename);
+}
 
 function fetchHTML(url) {
     return new Promise((resolve, reject) => {
@@ -16,34 +20,27 @@ function fetchHTML(url) {
     });
 }
 
-// Check if a filename is already percent-encoded
-function isEncoded(str) {
-    // Looks for at least one % followed by two hex chars (e.g., %20, %2B)
-    return /%[0-9A-Fa-f]{2}/.test(str);
-}
-
-// Extract .jar links from Apache/nginx directory listing HTML
+// Extract .jar links from a simple directory listing HTML
 function parseModLinks(html) {
     const regex = /href="([^"]+\.jar)"/g;
     const links = [];
     let match;
     while ((match = regex.exec(html)) !== null) {
         // Only include direct .jar links (ignore parent folders etc)
-        const file = match[1];
-        if (!file.includes('/')) {
-            links.push(file);
+        if (!match[1].includes('/')) {
+            links.push(match[1]);
         }
     }
     return links;
 }
 
-// Determine mod type by filename (very basic; can be improved)
+// Determine mod type by filename (expand as needed)
 function getModType(filename) {
-    const lower = filename.toLowerCase();
-    if (lower.includes('fabric')) return 'FabricMod';
-    if (lower.includes('neoforge')) return 'NeoForgeMod';
-    if (lower.includes('forge')) return 'ForgeMod';
-    if (lower.includes('quilt')) return 'QuiltMod';
+    const fn = filename.toLowerCase();
+    if (fn.includes('fabric')) return 'FabricMod';
+    if (fn.includes('neoforge')) return 'NeoForgeMod';
+    if (fn.includes('forge')) return 'ForgeMod';
+    if (fn.includes('quilt')) return 'QuiltMod';
     return 'UnknownMod';
 }
 
@@ -51,14 +48,14 @@ async function buildDistribution() {
     // 1. Load the template
     const template = JSON.parse(fs.readFileSync(TEMPLATE_PATH, 'utf8'));
 
-    // 2. Fetch remote mod directory HTML
+    // 2. Fetch directory listing from your mods URL
     console.log('Fetching mod listing...');
     const html = await fetchHTML(MODS_URL);
 
-    // 3. Parse all .jar mod files
+    // 3. Parse all mod .jar files
     const modFiles = parseModLinks(html);
 
-    // 4. Build modules array with correct URL encoding
+    // 4. Build the modules array, avoiding double encoding
     const modules = modFiles.map(filename => ({
         id: filename,
         name: filename,
@@ -68,13 +65,10 @@ async function buildDistribution() {
         }
     }));
 
-    // 5. Inject modules into template
-    if (!template.servers || !template.servers[0]) {
-        throw new Error('Template is missing servers array or servers[0].');
-    }
+    // 5. Merge into template
     template.servers[0].modules = modules;
 
-    // 6. Write updated distribution.json
+    // 6. Output final distribution.json
     fs.writeFileSync(OUTPUT_PATH, JSON.stringify(template, null, 2));
     console.log(`Done! Wrote ${OUTPUT_PATH} with ${modules.length} mods.`);
 }
