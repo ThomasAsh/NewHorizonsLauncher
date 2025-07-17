@@ -1,14 +1,15 @@
 const fs = require('fs');
 const https = require('https');
+const crypto = require('crypto');
 
 const TEMPLATE_PATH = 'distribution.template.json';
 const OUTPUT_PATH = 'distribution.json';
 const MODS_URL = 'https://newhorizons.games/launcher/mods/';
 
+const NEOFORGE_INSTALLER_URL = 'https://newhorizons.games/launcher/neoforge-21.1.192-installer.jar';
+
 /**
  * Fetches the HTML content of a given URL.
- * @param {string} url The URL to fetch.
- * @returns {Promise<string>} A promise that resolves with the HTML content.
  */
 function fetchHTML(url) {
     return new Promise((resolve, reject) => {
@@ -22,17 +23,14 @@ function fetchHTML(url) {
 
 /**
  * Parses the HTML to find links to .jar files.
- * @param {string} html The HTML content to parse.
- * @returns {string[]} An array of decoded filenames.
  */
 function parseModLinks(html) {
     const regex = /href="([^"]+\.jar)"/g;
-    const links = [];
+    let links = [];
     let match;
     while ((match = regex.exec(html)) !== null) {
-        if (!match[1].includes('/')) {
-            const decodedFilename = decodeURIComponent(match[1]);
-            links.push(decodedFilename);
+        if (!match[1].includes('/') && !match[1].includes('neoforge-21.1.192-installer.jar')) {
+            links.push(decodeURIComponent(match[1]));
         }
     }
     return links;
@@ -40,13 +38,39 @@ function parseModLinks(html) {
 
 /**
  * Determines if a mod is a core library.
- * @param {string} filename The filename of the mod.
- * @returns {boolean} True if the mod is a core library, false otherwise.
  */
 function isLibrary(filename) {
     const lowerFilename = filename.toLowerCase();
     const libraryKeywords = ['connector-', 'fabric-api-', 'forgified-fabric-api-'];
     return libraryKeywords.some(keyword => lowerFilename.includes(keyword));
+}
+
+/**
+ * Downloads a file to calculate its size and MD5 hash.
+ */
+function getArtifactMetadata(fileUrl) {
+    return new Promise((resolve, reject) => {
+        const hash = crypto.createHash('md5');
+        let size = 0;
+
+        const req = https.get(fileUrl, res => {
+            if (res.statusCode !== 200) {
+                return reject(new Error(`Failed to download ${fileUrl}: Status Code ${res.statusCode}`));
+            }
+            res.on('data', chunk => {
+                size += chunk.length;
+                hash.update(chunk);
+            });
+            res.on('end', () => {
+                resolve({
+                    size: size,
+                    MD5: hash.digest('hex')
+                });
+            });
+        });
+
+        req.on('error', reject);
+    });
 }
 
 /**
@@ -56,42 +80,58 @@ async function buildDistribution() {
     try {
         const template = JSON.parse(fs.readFileSync(TEMPLATE_PATH, 'utf8'));
         
-        console.log('Fetching mod listing...');
+        console.log('Processing NeoForge Loader...');
+        const neoForgeMetadata = await getArtifactMetadata(NEOFORGE_INSTALLER_URL);
+        const neoForgeModule = {
+            id: 'net.neoforged:neoforge:21.1.192',
+            name: 'NeoForge',
+            type: 'NeoForge',
+            // FIX: Added the 'required' property, which was missing.
+            required: {
+                value: true,
+                def: true
+            },
+            artifact: {
+                url: NEOFORGE_INSTALLER_URL,
+                size: neoForgeMetadata.size,
+                MD5: neoForgeMetadata.MD5
+            },
+            subModules: []
+        };
+        console.log('NeoForge Loader processed successfully.');
+
+        console.log('Fetching and processing mod listing...');
         const html = await fetchHTML(MODS_URL);
         const modFiles = parseModLinks(html);
+        const modules = [];
 
-        // THE FIX: Create a single, flat array of module objects.
-        // The launcher UI will use the 'group' property to categorize them visually.
-        const modules = modFiles.map(filename => {
-            const isLib = isLibrary(filename);
+        for (const filename of modFiles) {
+            console.log(`Processing ${filename}...`);
+            const fileUrl = `${MODS_URL}${encodeURIComponent(filename)}`;
+            const metadata = await getArtifactMetadata(fileUrl);
 
-            return {
-                // Every module, regardless of type, needs a valid Maven ID.
+            modules.push({
                 id: `games.newhorizons.mods:${filename.replace(/\.jar$/, '').replace(/[^a-zA-Z0-9.-]/g, '_')}:1.0.0`,
                 name: filename,
-                type: isLib ? 'Library' : 'NeoForgeMod',
-                // Per your request, all mods are now marked as required.
-                required: {
-                    value: true,
-                    def: true
-                },
-                // The 'group' property is used by the UI to create the visual categories.
+                type: isLibrary(filename) ? 'Library' : 'NeoForgeMod',
+                required: { value: true, def: true },
                 group: 'Required Mods',
-                // The launcher expects a subModules array, even if empty.
                 subModules: [], 
-                // Every module must have an artifact to resolve its path.
                 artifact: {
-                    url: `${MODS_URL}${encodeURIComponent(filename)}`
+                    url: fileUrl,
+                    size: metadata.size,
+                    MD5: metadata.MD5
                 }
-            };
-        });
+            });
+        }
 
-        // Assign the flat list of modules directly to the server.
+        modules.unshift(neoForgeModule);
+        
         template.servers[0].modules = modules;
         
         fs.writeFileSync(OUTPUT_PATH, JSON.stringify(template, null, 2));
         
-        console.log(`✅ Done! Wrote ${OUTPUT_PATH} with ${modules.length} required mods.`);
+        console.log(`✅ Done! Wrote ${OUTPUT_PATH} with NeoForge loader and ${modFiles.length} other mods.`);
 
     } catch (err) {
         console.error('❌ Build failed:', err);
