@@ -36,7 +36,22 @@
             "size": 6932275,
             "MD5": "c78bc6f931e89e0b85f1afd09db3f36e"
           },
-          "subModules": []
+          "subModules": [
+            {
+              "id": "net.neoforged:neoforge:21.1.192:version.json",
+              "name": "Version Manifest",
+              "type": "VersionManifest",
+              "required": {
+                "value": true,
+                "def": true
+              },
+              "artifact": {
+                "url": "https://newhorizons.games/launcher/version.json",
+                "size": 21148,
+                "MD5": "61c0f2596934e00291671c568f38213a"
+              }
+            }
+          ]
         },
         {
           "id": "games.newhorizons.mods:ATi_Structures_V1.4.2_1.21_plus:1.0.0",

@@ -5,8 +5,10 @@ const crypto = require('crypto');
 const TEMPLATE_PATH = 'distribution.template.json';
 const OUTPUT_PATH = 'distribution.json';
 const MODS_URL = 'https://newhorizons.games/launcher/mods/';
+const LAUNCHER_URL = 'https://newhorizons.games/launcher/';
 
-const NEOFORGE_INSTALLER_URL = 'https://newhorizons.games/launcher/neoforge-21.1.192-installer.jar';
+const NEOFORGE_INSTALLER_URL = `${LAUNCHER_URL}neoforge-21.1.192-installer.jar`;
+const NEOFORGE_MANIFEST_URL = `${LAUNCHER_URL}version.json`;
 
 /**
  * Fetches the HTML content of a given URL.
@@ -81,24 +83,42 @@ async function buildDistribution() {
         const template = JSON.parse(fs.readFileSync(TEMPLATE_PATH, 'utf8'));
         
         console.log('Processing NeoForge Loader...');
-        const neoForgeMetadata = await getArtifactMetadata(NEOFORGE_INSTALLER_URL);
+        const neoForgeInstallerMetadata = await getArtifactMetadata(NEOFORGE_INSTALLER_URL);
+        
+        console.log('Processing NeoForge Version Manifest...');
+        const neoForgeManifestMetadata = await getArtifactMetadata(NEOFORGE_MANIFEST_URL);
+
         const neoForgeModule = {
             id: 'net.neoforged:neoforge:21.1.192',
             name: 'NeoForge',
             type: 'NeoForge',
-            // FIX: Added the 'required' property, which was missing.
             required: {
                 value: true,
                 def: true
             },
             artifact: {
                 url: NEOFORGE_INSTALLER_URL,
-                size: neoForgeMetadata.size,
-                MD5: neoForgeMetadata.MD5
+                size: neoForgeInstallerMetadata.size,
+                MD5: neoForgeInstallerMetadata.MD5
             },
-            subModules: []
+            subModules: [
+                {
+                    id: 'net.neoforged:neoforge:21.1.192:version.json',
+                    name: 'Version Manifest',
+                    type: 'VersionManifest',
+                    required: {
+                        value: true,
+                        def: true
+                    },
+                    artifact: {
+                        url: NEOFORGE_MANIFEST_URL,
+                        size: neoForgeManifestMetadata.size,
+                        MD5: neoForgeManifestMetadata.MD5
+                    }
+                }
+            ]
         };
-        console.log('NeoForge Loader processed successfully.');
+        console.log('NeoForge processed successfully.');
 
         console.log('Fetching and processing mod listing...');
         const html = await fetchHTML(MODS_URL);
