@@ -1,3 +1,46 @@
+diff --git a/node_modules/helios-core/dist/dl/DownloadEngine.js b/node_modules/helios-core/dist/dl/DownloadEngine.js
+index 922cd1a..9a175f3 100644
+--- a/node_modules/helios-core/dist/dl/DownloadEngine.js
++++ b/node_modules/helios-core/dist/dl/DownloadEngine.js
+@@ -38,10 +38,11 @@ exports.downloadQueue = downloadQueue;
+ exports.downloadFile = downloadFile;
+ const fs_1 = require("fs");
+ const got_1 = __importStar(require("got"));
++const path_1 = require("path"); // Added path import for basename and join
+ const promises_1 = require("stream/promises");
+ const fastq = __importStar(require("fastq"));
+ const fs_extra_1 = require("fs-extra");
+-const path_1 = require("path");
++// Removed duplicate path_1 import as it's now at the top
+ const LoggerUtil_1 = require("../util/LoggerUtil");
+ const NodeUtil_1 = require("../util/NodeUtil");
+ const log = LoggerUtil_1.LoggerUtil.getLogger('DownloadEngine');
+@@ -64,8 +65,14 @@ async function downloadQueue(assets, onProgress) {
+     await Promise.all(promises);
+     return receivedTotals;
+ }
+-async function downloadFile(url, path, onProgress) {
+-    await (0, fs_extra_1.ensureDir)((0, path_1.dirname)(path));
++async function downloadFile(url, rawPath, onProgress) {
++    // Sanitize the filename part of the path before creating the directory/file
++    const dir = (0, path_1.dirname)(rawPath);
++    const filename = (0, path_1.basename)(rawPath);
++    const sanitizedFilename = filename.replace(/:/g, '_'); // Replace colons with underscores
++    const path = (0, path_1.join)(dir, sanitizedFilename); // Reconstruct the path with sanitized filename
++
++    await (0, fs_extra_1.ensureDir)(dir); // Ensure the directory exists (using original dir)
+     const MAX_RETRIES = 10;
+     let fileWriterStream = null; // The write stream.
+     let retryCount = 0; // The number of retries attempted.
+@@ -83,7 +90,7 @@ async function downloadFile(url, path, onProgress) {
+         }
+         try {
+             const downloadStream = got_1.default.stream(url);
+-            fileWriterStream = (0, fs_1.createWriteStream)(path);
++            fileWriterStream = (0, fs_1.createWriteStream)(path); // Use the sanitized 'path' here
+             if (onProgress) {
+                 downloadStream.on('downloadProgress', (progress) => onProgress(progress));
+             }
 diff --git a/node_modules/helios-core/dist/dl/distribution/DistributionIndexProcessor.js b/node_modules/helios-core/dist/dl/distribution/DistributionIndexProcessor.js
 index f09b6b4..037c88a 100644
 --- a/node_modules/helios-core/dist/dl/distribution/DistributionIndexProcessor.js

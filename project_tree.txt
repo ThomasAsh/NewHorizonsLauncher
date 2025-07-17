@@ -1,0 +1,118 @@
+.
+├── .eslintignore
+├── .eslintrc.json
+├── .github
+│   ├── FUNDING.yml
+│   └── workflows
+│       ├── build.yml
+│       └── update.yml
+├── .gitignore
+├── .nvmrc
+├── LICENSE.txt
+├── README.md
+├── app
+│   ├── app.ejs
+│   ├── assets
+│   │   ├── css
+│   │   │   └── launcher.css
+│   │   ├── fonts
+│   │   │   ├── Avenir-Black.ttf
+│   │   │   ├── Avenir-BlackOblique.ttf
+│   │   │   ├── Avenir-Book.ttf
+│   │   │   ├── Avenir-BookOblique.ttf
+│   │   │   ├── Avenir-Heavy.ttf
+│   │   │   ├── Avenir-HeavyOblique.ttf
+│   │   │   ├── Avenir-Light.ttf
+│   │   │   ├── Avenir-LightOblique.ttf
+│   │   │   ├── Avenir-Medium.ttf
+│   │   │   ├── Avenir-MediumOblique.ttf
+│   │   │   ├── Avenir-Oblique.ttf
+│   │   │   ├── Avenir-Roman.ttf
+│   │   │   └── ringbearer.ttf
+│   │   ├── images
+│   │   │   ├── LoadingSeal.png
+│   │   │   ├── NewHorizons.ico
+│   │   │   ├── NewHorizons.png
+│   │   │   ├── backgrounds
+│   │   │   │   ├── 0.jpg
+│   │   │   │   ├── 1.jpg
+│   │   │   │   ├── 2.jpg
+│   │   │   │   ├── 3.jpg
+│   │   │   │   ├── 4.jpg
+│   │   │   │   ├── 5.jpg
+│   │   │   │   ├── 6.jpg
+│   │   │   │   └── misty-mountain-sarge.jpg
+│   │   │   ├── icon.png
+│   │   │   ├── icons
+│   │   │   │   ├── arrow.svg
+│   │   │   │   ├── discord.svg
+│   │   │   │   ├── instagram.svg
+│   │   │   │   ├── link.svg
+│   │   │   │   ├── lock.svg
+│   │   │   │   ├── microsoft.svg
+│   │   │   │   ├── mojang.svg
+│   │   │   │   ├── news.svg
+│   │   │   │   ├── profile.svg
+│   │   │   │   ├── settings.svg
+│   │   │   │   ├── sevenstar.svg
+│   │   │   │   ├── sevenstar_circle.svg
+│   │   │   │   ├── sevenstar_circle_extended.svg
+│   │   │   │   ├── sevenstar_circle_hole.svg
+│   │   │   │   ├── sevenstar_circle_hole_extended.svg
+│   │   │   │   ├── sevenstar_extended.svg
+│   │   │   │   ├── x.svg
+│   │   │   │   └── youtube.svg
+│   │   │   ├── logo.png
+│   │   │   └── minecraft.icns
+│   │   ├── js
+│   │   │   ├── authmanager.js
+│   │   │   ├── configmanager.js
+│   │   │   ├── discordwrapper.js
+│   │   │   ├── distromanager.js
+│   │   │   ├── dropinmodutil.js
+│   │   │   ├── ipcconstants.js
+│   │   │   ├── isdev.js
+│   │   │   ├── langloader.js
+│   │   │   ├── preloader.js
+│   │   │   ├── processbuilder.js
+│   │   │   ├── scripts
+│   │   │   │   ├── landing.js
+│   │   │   │   ├── login.js
+│   │   │   │   ├── loginOptions.js
+│   │   │   │   ├── overlay.js
+│   │   │   │   ├── settings.js
+│   │   │   │   ├── uibinder.js
+│   │   │   │   ├── uicore.js
+│   │   │   │   └── welcome.js
+│   │   │   └── serverstatus.js
+│   │   └── lang
+│   │       ├── _custom.toml
+│   │       └── en_US.toml
+│   ├── frame.ejs
+│   ├── landing.ejs
+│   ├── login.ejs
+│   ├── loginOptions.ejs
+│   ├── overlay.ejs
+│   ├── settings.ejs
+│   ├── waiting.ejs
+│   └── welcome.ejs
+├── build-distribution.js
+├── dev-app-update.yml
+├── distribution.json
+├── distribution.template.json
+├── docs
+│   ├── MicrosoftAuth.md
+│   ├── distro.md
+│   └── sample_distribution.json
+├── electron-builder.yml
+├── index.js
+├── libraries
+│   └── java
+│       └── PackXZExtract.jar
+├── package-lock.json
+├── package.json
+├── patches
+│   └── helios-core+2.2.4.patch
+└── project_tree.txt
+
+17 directories, 99 files

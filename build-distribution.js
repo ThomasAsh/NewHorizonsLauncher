@@ -1,6 +1,7 @@
 const fs = require('fs');
 const https = require('https');
 const crypto = require('crypto');
+const path = require('path'); // Import the path module
 
 const TEMPLATE_PATH = 'distribution.template.json';
 const OUTPUT_PATH = 'distribution.json';
@@ -75,6 +76,17 @@ function getArtifactMetadata(fileUrl) {
     });
 }
 
+// The sanitizeForPath function is no longer strictly needed for the 'id' field
+// if helios-core is patched to handle path sanitization internally.
+// However, it can still be useful if you need to generate other path-safe strings.
+// For this specific fix, we are assuming helios-core will handle path sanitization
+// or that the Maven ID itself is acceptable for file paths on the target OS after the patch.
+/*
+function sanitizeForPath(input) {
+    return input.replace(/:/g, '_');
+}
+*/
+
 /**
  * Main function to build the distribution file.
  */
@@ -88,10 +100,17 @@ async function buildDistribution() {
         console.log('Processing NeoForge Version Manifest...');
         const neoForgeManifestMetadata = await getArtifactMetadata(NEOFORGE_MANIFEST_URL);
 
+        // Keep the original Maven ID (with colons) for the 'id' field.
+        // We are assuming your helios-core patch will handle the 'NeoForge' type
+        // and that helios-core will internally sanitize paths derived from this ID.
+        const neoForgeMavenId = 'net.neoforged:neoforge:21.1.192';
+        const neoForgeManifestMavenId = 'net.neoforged:neoforge:21.1.192:version.json';
+
+
         const neoForgeModule = {
-            id: 'net.neoforged:neoforge:21.1.192',
-            name: 'NeoForge',
-            type: 'NeoForge',
+            id: neoForgeMavenId, // Use the original Maven ID (with colons)
+            name: 'NeoForge', // Name remains the same
+            type: 'NeoForge', // Explicitly set type to 'NeoForge' as per your patch
             required: {
                 value: true,
                 def: true
@@ -103,7 +122,7 @@ async function buildDistribution() {
             },
             subModules: [
                 {
-                    id: 'net.neoforged:neoforge:21.1.192:version.json',
+                    id: neoForgeManifestMavenId, // Use the original Maven ID (with colons)
                     name: 'Version Manifest',
                     type: 'VersionManifest',
                     required: {
@@ -130,10 +149,14 @@ async function buildDistribution() {
             const fileUrl = `${MODS_URL}${encodeURIComponent(filename)}`;
             const metadata = await getArtifactMetadata(fileUrl);
 
+            // Construct the original Maven ID for the 'id' field.
+            // Assuming helios-core will handle path sanitization internally or this ID is acceptable.
+            const originalModId = `games.newhorizons.mods:${filename.replace(/\.jar$/, '').replace(/[^a-zA-Z0-9.-]/g, '_')}:1.0.0`;
+            
             modules.push({
-                id: `games.newhorizons.mods:${filename.replace(/\.jar$/, '').replace(/[^a-zA-Z0-9.-]/g, '_')}:1.0.0`,
+                id: originalModId, // Use the original Maven ID (with colons)
                 name: filename,
-                type: isLibrary(filename) ? 'Library' : 'NeoForgeMod',
+                type: isLibrary(filename) ? 'Library' : 'NeoForgeMod', // Ensure correct type
                 required: { value: true, def: true },
                 group: 'Required Mods',
                 subModules: [], 
@@ -151,6 +174,7 @@ async function buildDistribution() {
         
         fs.writeFileSync(OUTPUT_PATH, JSON.stringify(template, null, 2));
         
+        // Corrected the variable name from OUTPUT_FILE to OUTPUT_PATH
         console.log(`✅ Done! Wrote ${OUTPUT_PATH} with NeoForge loader and ${modFiles.length} other mods.`);
 
     } catch (err) {
